@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Materials</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <header class="dashboard-header">
+
+            <div>
+                <h1>Study Group Hub</h1>
+                <p>Study Materials</p>
+            </div>
+
+            <button class="logout-btn" onclick="logout()">
+                Logout
+            </button>
+
+        </header>
+
+
+        <section class="welcome-section">
+
+            <h2>Shared Study Materials</h2>
+
+            <p>
+                Access useful notes and learning resources shared by students.
+            </p>
+
+        </section>
+
+
+        <section class="action-section">
+
+            <div class="action-grid">
+
+                <div class="action-card">
+
+                    <div class="icon">🐍</div>
+
+                    <h3>Python Programming Notes</h3>
+
+                    <p>
+                        Basic Python concepts, syntax and programming examples.
+                    </p>
+
+                    <p>
+                        <strong>Subject:</strong> Python Programming
+                    </p>
+
+                    <button onclick="alert('Opening Python Programming Notes...')">
+                        View Material
+                    </button>
+
+                </div>
+
+
+                <div class="action-card">
+
+                    <div class="icon">🗄️</div>
+
+                    <h3>DBMS Study Notes</h3>
+
+                    <p>
+                        Database concepts, SQL queries and normalization notes.
+                    </p>
+
+                    <p>
+                        <strong>Subject:</strong> DBMS
+                    </p>
+
+                    <button onclick="alert('Opening DBMS Study Notes...')">
+                        View Material
+                    </button>
+
+                </div>
+
+
+                <div class="action-card">
+
+                    <div class="icon">🤖</div>
+
+                    <h3>Artificial Intelligence Notes</h3>
+
+                    <p>
+                        AI fundamentals, machine learning and important concepts.
+                    </p>
+
+                    <p>
+                        <strong>Subject:</strong> Artificial Intelligence
+                    </p>
+
+                    <button onclick="alert('Opening AI Notes...')">
+                        View Material
+                    </button>
+
+                </div>
+
+
+                <div class="action-card">
+
+                    <div class="icon">🌐</div>
+
+                    <h3>Web Development Notes</h3>
+
+                    <p>
+                        HTML, CSS and JavaScript learning materials.
+                    </p>
+
+                    <p>
+                        <strong>Subject:</strong> Web Development
+                    </p>
+
+                    <button onclick="alert('Opening Web Development Notes...')">
+                        View Material
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="recent-section">
+
+            <div class="empty-state">
+
+                <h3>Share Study Materials</h3>
+
+                <p>
+                    Upload useful notes and resources for your study group.
+                </p>
+
+                <button onclick="alert('Material upload feature will be connected to Firebase later.')">
+                    Upload Material
+                </button>
+
+                <br><br>
+
+                <button onclick="window.location.href='dashboard.html'">
+                    ← Back to Dashboard
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
