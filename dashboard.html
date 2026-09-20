@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .quick-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .quick-card {
+            background: white;
+            padding: 18px;
+            border-radius: 15px;
+        }
+
+        .quick-card h3 {
+            margin-bottom: 7px;
+            color: #1e3a8a;
+        }
+
+        .quick-card p {
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .quick-card button {
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .quick-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <header class="dashboard-header">
+
+            <div>
+                <h1>Study Group Hub</h1>
+                <p>Student Dashboard</p>
+            </div>
+
+            <button class="logout-btn" onclick="logout()">
+                Logout
+            </button>
+
+        </header>
+
+
+        <section class="welcome-section">
+
+            <h2>Welcome, Student 👋</h2>
+
+            <p>
+                Create, join and manage your study groups.
+            </p>
+
+        </section>
+
+
+        <section class="stats-container">
+
+            <div class="stat-card">
+                <h3>0</h3>
+                <p>My Groups</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>0</h3>
+                <p>Materials</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>0</h3>
+                <p>Discussions</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>0</h3>
+                <p>Schedules</p>
+            </div>
+
+        </section>
+
+
+        <section class="action-section">
+
+            <h2>Study Group Activities</h2>
+
+            <div class="quick-grid">
+
+                <div class="quick-card">
+
+                    <h3>🔍 Browse Study Groups</h3>
+
+                    <p>
+                        Find and join study groups.
+                    </p>
+
+                    <button onclick="browseGroups()">
+                        Browse Groups
+                    </button>
+
+                </div>
+
+
+                <div class="quick-card">
+
+                    <h3>➕ Create Study Group</h3>
+
+                    <p>
+                        Create your own study group.
+                    </p>
+
+                    <button onclick="createGroup()">
+                        Create Group
+                    </button>
+
+                </div>
+
+
+                <div class="quick-card">
+
+                    <h3>👥 My Groups</h3>
+
+                    <p>
+                        View your joined groups.
+                    </p>
+
+                    <button onclick="myGroups()">
+                        View My Groups
+                    </button>
+
+                </div>
+
+
+                <div class="quick-card">
+
+                    <h3>📚 Study Materials</h3>
+
+                    <p>
+                        Access shared study materials.
+                    </p>
+
+                    <button onclick="studyMaterials()">
+                        View Materials
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
