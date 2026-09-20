@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Study Group</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h1>Study Group Hub</h1>
+
+            <p class="subtitle">
+                Create a new study group
+            </p>
+
+            <h2>Create Study Group</h2>
+
+            <form id="groupForm">
+
+                <label>Group Name</label>
+
+                <input
+                    type="text"
+                    id="groupName"
+                    placeholder="Example: Python Study Group"
+                    required
+                >
+
+                <label>Subject</label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Example: Python Programming"
+                    required
+                >
+
+                <label>Group Description</label>
+
+                <textarea
+                    id="groupDescription"
+                    placeholder="Describe the purpose of your study group..."
+                    rows="5"
+                    required
+                ></textarea>
+
+                <label>Maximum Members</label>
+
+                <input
+                    type="number"
+                    id="maxMembers"
+                    placeholder="Example: 10"
+                    min="2"
+                    required
+                >
+
+                <button type="submit">
+                    Create Group
+                </button>
+
+            </form>
+
+            <p id="groupMessage"></p>
+
+            <p class="register-text">
+                <a href="dashboard.html">
+                    ← Back to Dashboard
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        const groupForm =
+            document.getElementById("groupForm");
+
+        groupForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const groupMessage =
+                document.getElementById("groupMessage");
+
+            groupMessage.textContent =
+                "Study group created successfully!";
+
+            groupForm.reset();
+
+        });
+
+    </script>
+
+</body>
+
+</html>
