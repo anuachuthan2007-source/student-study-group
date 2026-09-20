@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Study Groups</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <header class="dashboard-header">
+
+            <div>
+                <h1>Study Group Hub</h1>
+                <p>My Study Groups</p>
+            </div>
+
+            <button class="logout-btn" onclick="logout()">
+                Logout
+            </button>
+
+        </header>
+
+
+        <section class="welcome-section">
+
+            <h2>My Groups</h2>
+
+            <p>
+                View the study groups you have joined.
+            </p>
+
+        </section>
+
+
+        <section class="action-section">
+
+            <div class="action-grid">
+
+                <div class="action-card">
+
+                    <div class="icon">💻</div>
+
+                    <h3>Python Programming</h3>
+
+                    <p>
+                        Practice Python programming with
+                        other students.
+                    </p>
+
+                    <p>
+                        <strong>Members:</strong> 8
+                    </p>
+
+                    <p>
+                        <strong>Subject:</strong> Programming
+                    </p>
+
+                    <button onclick="alert('Opening Python Programming group...')">
+                        Open Group
+                    </button>
+
+                </div>
+
+
+                <div class="action-card">
+
+                    <div class="icon">🗄️</div>
+
+                    <h3>Database Management</h3>
+
+                    <p>
+                        Learn DBMS concepts and solve
+                        problems together.
+                    </p>
+
+                    <p>
+                        <strong>Members:</strong> 6
+                    </p>
+
+                    <p>
+                        <strong>Subject:</strong> DBMS
+                    </p>
+
+                    <button onclick="alert('Opening Database Management group...')">
+                        Open Group
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="recent-section">
+
+            <div class="empty-state">
+
+                <h3>Want to join another group?</h3>
+
+                <p>
+                    Browse available study groups and
+                    join a suitable group.
+                </p>
+
+                <button onclick="browseGroups()">
+                    Browse Study Groups
+                </button>
+
+                <br><br>
+
+                <button onclick="window.location.href='dashboard.html'">
+                    ← Back to Dashboard
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
